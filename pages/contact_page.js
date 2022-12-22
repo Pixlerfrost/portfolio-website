@@ -76,6 +76,7 @@ export function Contact_Page() {
               variant="filled"
               mb={6}
               type="text"
+              required
             />
             <Input
               background={useColorModeValue("#ffffff40")}
@@ -85,6 +86,7 @@ export function Contact_Page() {
               variant="filled"
               mb={6}
               type="email"
+              required
             />
             <Input
               background={useColorModeValue("#ffffff40")}
@@ -94,6 +96,7 @@ export function Contact_Page() {
               variant="filled"
               mb={6}
               type="text"
+              required
             />
             <Textarea
               background={useColorModeValue("#ffffff40")}
@@ -102,6 +105,7 @@ export function Contact_Page() {
               placeholder="Message"
               variant="filled"
               mb={6}
+              required
             />
             <Button colorScheme="teal" type="submit" value="send">
               Send
