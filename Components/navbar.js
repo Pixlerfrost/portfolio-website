@@ -24,7 +24,7 @@ const Navbar = (props) => {
 
   return (
     <Box
-      position="fixed "
+      position="fixed"
       as="nav"
       w="100%"
       bg={useColorModeValue("#ffffff40", "whiteAlpha.50")}
@@ -52,11 +52,30 @@ const Navbar = (props) => {
           alignItems="center"
           flexGrow={1}
           mt={{ base: 4, md: 0 }}
+          gap={4}
+          mb="0.2vh"
+          ml="5"
         >
-          <Link href="/works">Works</Link>
-          <Link href="/contact_page">Contact Us</Link>
-          <Link href="https://github.com/Pixlerfrost/Portfolio">Source</Link>
-          <IoLogoGithub />
+          <Link textColor={useColorModeValue("black", "white")} href="/works">
+            Works
+          </Link>
+          <Link
+            textColor={useColorModeValue("black", "white")}
+            href="/contact_page"
+          >
+            Contact Us
+          </Link>
+
+          <Link
+            textColor={useColorModeValue("black", "white")}
+            display="flex"
+            href="https://github.com/Pixlerfrost/Portfolio"
+          >
+            Source
+            <Box mt="0.7vh" ml="1.5">
+              <IoLogoGithub />
+            </Box>
+          </Link>
         </Stack>
 
         <Box flex={1} align="right">
